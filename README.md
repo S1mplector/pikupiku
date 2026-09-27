@@ -2,7 +2,19 @@
 
 Turn a still image into a looping **line-boil GIF**: the colored image stays still while a few pencil-outline variations cycle around its contours. Written in C11 with a numbered terminal interface and an optional CLI for batch jobs.
 
-![Example line boil](docs/demo.gif)
+## Before and after
+
+| Input portrait | Rendered line boil |
+| --- | --- |
+| ![Hanako portrait input](docs/reference/hanako-input.png) | ![Hanako animated output](docs/reference/hanako-output.gif) |
+
+Reference settings: **strength 2 · 5 drawings · 6 fps · 640 px wide**.
+
+```sh
+./pikupiku docs/reference/hanako-input.png hanako.gif --width 640 --strength 2 --frames 5 --fps 6
+```
+
+The input is an AI-generated fan-art portrait of Hanako Ikezawa from *Katawa Shoujo*, created for this demonstration. The GIF was produced by this renderer. It is not official game artwork. [Reference details](docs/reference/README.md).
 
 ## Start with the terminal interface
 
@@ -105,7 +117,7 @@ Tests require Python 3 (standard library only), FFmpeg, and FFprobe. They exerci
 - `src/main.c`: TUI / CLI entry point
 - `tests/make_fixtures.py`: optional original sample illustration generator (Pillow)
 
-The included sample artwork is an original synthetic fixture. Personal portraits and local renders are excluded from the repository.
+The main reference is the Hanako fan-art example above. Original synthetic fixtures are also included for testing. Personal portraits and other local renders are excluded from the repository.
 
 ## License
 
