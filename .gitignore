@@ -1,0 +1,9 @@
+/pikupiku
+/output/
+/tests/output/
+/tests/fixtures/wikipe-tan.png
+/tests/fixtures/ATTRIBUTION.md
+*.o
+*.tmp-*
+__pycache__/
+.DS_Store
