@@ -14,7 +14,7 @@ Reference settings: **strength 2 · 5 drawings · 6 fps · 640 px wide**.
 ./pikupiku docs/reference/hanako-input.png hanako.gif --width 640 --strength 2 --frames 5 --fps 6
 ```
 
-The input is an AI-generated fan-art portrait of Hanako Ikezawa from *Katawa Shoujo*, created for this demonstration. The GIF was produced by this renderer. It is not official game artwork. [Reference details](docs/reference/README.md).
+The input is a fan-art portrait of Hanako Ikezawa from *Katawa Shoujo*, created for this demonstration. The GIF was produced by this renderer. It is not official game artwork. [Reference details](docs/reference/README.md).
 
 ## Start with the terminal interface
 
